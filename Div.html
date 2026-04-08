@@ -1,0 +1,61 @@
+<!-- Jokaisen HTML teidoston alussa olevat asiat. -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* Luokkien määritykset. Box on asetelman määritys ja Yks-Nel ovat div alueiden kokojen ja paikkojen määritys. */
+    .Box {
+        display: flexbox;
+    }
+    .Yks {
+        height: 360px;
+        width: 25%;
+        float: left;
+    }   
+    .Kaa {
+        height: 800px;
+        width: 75%;
+        float: right;
+    }
+    .Kol {
+        height: 440px;
+        width: 25%;
+        float: left;
+    }
+    .Nel {
+        height:100%;
+    }
+
+
+    .Keskelle {
+        position: relative;
+        top: 50%;
+        transform: translateY(-100%);
+        text-align: center;
+    }
+</style>
+</head>
+
+<!-- HMTL tiedoston näkyvät osat ovat <body> osioiden välissä. -->
+<body>
+
+    <!-- Div joka määrittää jokaiseen sen välissä olevaan aiemman määritetyn "flexbox" tyypin ja keskittää kaiken tekstin. -->
+    <div class="Box">
+
+        <!-- Divit joiden sisällä on sivulla näkyvät tekstit. -->
+        <div class="Yks" style="background-color: lightblue;">
+            <h1 class="Keskelle">Kuva <br> Leveys 25%</h1>
+        </div>
+        <div class="Kaa" style="background-color: lightcoral;">
+            <h1 class="Keskelle">Osaamisen tiivistelmä ja työkokemus <br> Leveys 75%</h1>
+        </div>
+        <div class="Kol" style="background-color: lightgoldenrodyellow;">
+            <h1 class="Keskelle">Henkilötiedot</h1>
+        </div>
+        <div class="Nel" style="background-color: lightgreen;">
+            <h1 style="text-align: center;">Linkit someen</h1>
+        </div>
+    </div>  
+</body>
+</html>
